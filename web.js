@@ -1,14 +1,17 @@
-var express = require('express');
-var fs = require('fs');
-var app = express.createServer(express.logger());
+var async   = require('async')
+  , express = require('express')
+  , fs      = require('fs')
+  , http    = require('http')
+  , https   = require('https')
+  , db      = require('./models');
 
+var app = express();
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.set('port', process.env.PORT || 8080);
+
+// Render homepage (note trailing slash): example.com/
 app.get('/', function(request, response) {
-    var data = fs.readFileSync('index.html');
-    var buf = new Buffer(data);
-    response.send(buf.toString('utf-8'));
-});
-
-var port = process.env.PORT || 8080;
-app.listen(port, function() {
-  console.log("Listening on " + port);
+  var data = fs.readFileSync('index.html').toString();
+  response.send(data);
 });
