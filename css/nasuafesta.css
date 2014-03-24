@@ -1,0 +1,13 @@
+/* NA SUA FESTA */
+h1,.about-events, .menu-titles h1 {
+	font-family:  'Lato', sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.navbar-default,.nav > li, .navbar-default .navbar-nav > li > a{
+	background: #000046;
+}
+#top-bar{
+	background: #ff8c01;
+}
