@@ -18736,4 +18736,37 @@ h1, .about-events, .menu-titles h1 {
 /* line 11, ../../dev/scss/nasuafesta.scss */
 #top-bar {
   background: #ff8c01;
+  height: 120px;
+  padding: 65px 0 25px;
+}
+
+/* line 16, ../../dev/scss/nasuafesta.scss */
+.headline-list h1 {
+  font-size: 1.6em;
+}
+
+/* line 19, ../../dev/scss/nasuafesta.scss */
+.reservation {
+  padding: 4%;
+  margin: 0% auto;
+}
+
+/* line 23, ../../dev/scss/nasuafesta.scss */
+.social {
+  padding: 0 2%;
+}
+
+/* line 27, ../../dev/scss/nasuafesta.scss */
+.daily-deal-icons2 {
+  padding: 0 2%;
+}
+
+/* line 31, ../../dev/scss/nasuafesta.scss */
+.daily-deal-icons, .daily-deal-icons span {
+  font-size: 1em;
+}
+
+/* line 34, ../../dev/scss/nasuafesta.scss */
+.daily-deal-icons {
+  padding: 1.5% 1%;
 }
