@@ -67,12 +67,6 @@ module.exports = function(grunt) {
             }]
           }
         },
-        includereplace: {
-          html: {
-            src: '*.html',
-            dest: 'dist/'
-          }
-        },
         watch: {
           options: {
             livereload: true,
@@ -89,10 +83,6 @@ module.exports = function(grunt) {
           js: {
             files: 'dev/js/**/*.js',
             tasks:['concat']
-          },
-          html:{
-            files: ['*.html'],
-            tasks: ['includereplace:html']
           },
         },
         connect: {
